@@ -20,6 +20,6 @@ router.post('/register', userValidator, verifyUser, crpytPassword, register)
 router.post('/login', userValidator, verifyLogin, login)
 
 // 修改密码
-router.patch('/', auth, crpytPassword, changePassword)
+router.patch('/updatePassword', auth, crpytPassword, changePassword)
 
 module.exports = router
